@@ -42,6 +42,9 @@ main() {
     # WebCP
     elif check_port $host 24522; then
         name="WebCP"
+    # OpenPanel
+    elif check_port $host 2087; then
+        name="OpenPanel"
     # InterWorx
     elif check_port $host 2443 || check_port $host 2080; then
         name="InterWorx"
